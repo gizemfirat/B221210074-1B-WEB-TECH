@@ -1,4 +1,6 @@
 //ABSTRACT
+@import "./abstract/variables.scss";
+@import "./abstract/typography.scss";
 
 
 //COMPONENTS
@@ -6,4 +8,5 @@
 
 body{
   margin:0;
+  background-color: #1a1a1a;
 }
