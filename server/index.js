@@ -24,19 +24,25 @@ app.get("/", (req, res) => {
   res.send(indexHtml);
 });
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
+  const indexHtml = fs.readFileSync(`html/index.html`, "utf-8");
+
+  res.send(indexHtml);
+});
+
+app.get("/mycity", (req, res) => {
   const myCityHtml = fs.readFileSync(`html/myCity.html`, "utf-8");
 
   res.send(myCityHtml);
 });
 
-app.get("/", (req, res) => {
+app.get("/myinsterests", (req, res) => {
   const myInterestsHtml = fs.readFileSync(`html/myInsterests.html`, "utf-8");
 
   res.send(myInterestsHtml);
 });
 
-app.get("/", (req, res) => {
+app.get("/ourlegacy", (req, res) => {
   const ourLegacyHtml = fs.readFileSync(`html/ourLegacy.html`, "utf-8");
 
   res.send(ourLegacyHtml);
@@ -49,7 +55,7 @@ app.get("/mycv", (req, res) => {
     .replace("{NAME}", data.name)
     .replace("{SURNAME}", data.surname);
 
-  res.send(result);
+  res.send(myCVHtml);
 });
 
 app.listen(port, () => {
