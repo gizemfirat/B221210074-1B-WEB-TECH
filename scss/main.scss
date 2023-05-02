@@ -1,11 +1,11 @@
 //ABSTRACT
 @import "./abstract/variables.scss";
 @import "./abstract/typography.scss";
-@import "./components/card.scss";
 
 
 //COMPONENTS
 @import "./components/button.scss";
+@import "./components/card.scss";
 
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
