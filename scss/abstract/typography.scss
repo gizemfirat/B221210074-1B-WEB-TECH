@@ -21,7 +21,7 @@ h1{
   font-size: 7rem;
   font-weight: 500;
   text-align: center;
-  color: $color-primary;
+  color: $color-tertiary;
   margin-top: 16rem;
   margin-bottom: 2rem;
 }
@@ -30,7 +30,7 @@ h2{
   font-size: 3rem;
   font-weight: 500;
   text-align: center;
-  color: $color-primary;
+  color: $color-tertiary;
 }
 
 h3{
@@ -58,6 +58,10 @@ h4{
 }
 
 p{
-  text-align: center;
+  font-size:1.8rem;
+  text-align: justify;
+  color: $color-tertiary;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 

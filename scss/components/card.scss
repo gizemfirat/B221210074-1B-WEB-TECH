@@ -13,11 +13,11 @@
     0 4px 4px rgba(0,0,0,0.1), 
     0 8px 8px rgba(0,0,0,0.1),
     0 16px 16px rgba(0,0,0,0.1);
+    
 }
-
 .card-text{
   font-size: 1.5rem;
-  color: $color-tertiary;
+  color: black;
   text-align: justify;
   margin-left: 4rem;
   margin-right: 4rem;
@@ -25,6 +25,6 @@
 
 .card-title{
   font-size: 1.8rem;
-  color: $color-tertiary;
+  color: black;
   text-align: center;
 }
