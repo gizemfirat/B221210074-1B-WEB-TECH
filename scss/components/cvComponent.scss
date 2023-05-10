@@ -1,5 +1,5 @@
-.first-background{
-  background-color: #BAB99D;
+.first-background {
+  background-color: #bab99d;
   width: 40rem;
   height: 100rem;
   position: relative;
@@ -7,8 +7,8 @@
   z-index: 1;
 }
 
-.profile-picture{
-  background-color: #F3EFE6;
+.profile-picture {
+  background-color: #f3efe6;
   width: 30rem;
   height: 30rem;
   position: relative;
@@ -18,7 +18,7 @@
   border-radius: 50%;
 }
 
-.name{
+.name {
   width: 40rem;
   height: 40rem;
   position: relative;
@@ -30,26 +30,26 @@
   text-align: center;
 }
 
-.name-text{
-  color: #F3EFE6;
+.name-text {
+  color: #f3efe6;
   text-align: center;
   font-family: Poppins;
   font-size: 3rem;
   font-weight: 600;
 }
 
-.tag{
-  color:#F3EFE6;
+.tag {
+  color: #f3efe6;
   text-align: left;
   margin-left: 5rem;
   font-family: Poppins;
-  font-size: 0,5rem;
+  font-size: 0, 5rem;
   font-weight: 300;
   margin-top: -1rem;
 }
 
-.info-pharagraph{
-  color:#F3EFE6 ;
+.info-pharagraph {
+  color: #f3efe6;
   text-align: justify;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -59,7 +59,7 @@
   margin-top: 3rem;
 }
 
-.second-background{
+.second-background {
   background-color: white;
   width: 62rem;
   height: 100rem;
@@ -69,8 +69,8 @@
   margin-top: -170rem;
 }
 
-.second-background-left{
-  background-color: #F3EFE6;
+.second-background-left {
+  background-color: #f3efe6;
   width: 28rem;
   height: 60rem;
   position: relative;
@@ -79,8 +79,8 @@
   margin-top: -78rem;
 }
 
-.second-background-right{
-  background-color: #F3EFE6;
+.second-background-right {
+  background-color: #f3efe6;
   width: 28rem;
   height: 60rem;
   position: relative;
@@ -89,8 +89,8 @@
   margin-top: -60rem;
 }
 
-.hobbie-1{
-  background-color: #BAB99D;
+.hobbie-1 {
+  background-color: #bab99d;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
@@ -100,8 +100,8 @@
   margin-top: 3rem;
 }
 
-.hobbie-2{
-  background-color: #BAB99D;
+.hobbie-2 {
+  background-color: #bab99d;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
@@ -110,8 +110,8 @@
   z-index: 2;
   margin-top: -12rem;
 }
-.hobbie-3{
-  background-color: #BAB99D;
+.hobbie-3 {
+  background-color: #bab99d;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
@@ -121,8 +121,8 @@
   margin-top: -12rem;
 }
 
-.hobbie-4{
-  background-color: #BAB99D;
+.hobbie-4 {
+  background-color: #bab99d;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
@@ -130,4 +130,10 @@
   left: 112rem;
   z-index: 2;
   margin-top: -12rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0rem auto;
 }
