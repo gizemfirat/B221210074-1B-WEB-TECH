@@ -1,1 +1,68 @@
+.top-part{
+  height: 4rem;
+  background-color: $color-tertiary;
+  text-align: center;
+}
 
+.left-part{
+  height: 120rem;
+  background-color: $color-fifth;
+  text-align: justify;
+  padding: 4rem;
+}
+
+.left-part-text{
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  color: $color-primary;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.right-part{
+  text-align: justify;
+}
+
+.left-main-title{
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: $color-primary;
+  margin-bottom: 2rem;
+}
+
+.right-left-text{
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  color: $color-fifth;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 9rem;
+  margin-bottom: 5rem;
+}
+
+.right-left-picture{
+  width: 40rem;
+  height: 60rem;
+  margin-bottom: 3rem;
+}
+
+.right-right-text{
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  color: $color-fifth;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.right-right-picture{
+  margin-top: 10rem;
+}
