@@ -16,10 +16,15 @@
   font-family: 'Poppins', sans-serif;
   text-align: justify;
   color: $color-primary;
+  background-color: $color-fifth;
   margin-right: 4rem;
   margin-left: 4rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
+}
+
+.left-part-background{
+  background-color: $color-fifth;
 }
 
 .right-part{
