@@ -1,1 +1,8 @@
+.button-style{
+  background-color: $color-primary;
+  color: $color-fifth;
+}
 
+.button:Hover{
+  background-color: $color-secondary;
+}

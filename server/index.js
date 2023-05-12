@@ -116,6 +116,18 @@ app.get("/", (req, res) => {
   res.send(result);
 });
 
+app.get("/home", (req, res) => {
+  const indexHtml = fs.readFileSync(`html/index.html`, "utf-8");
+
+  var mainLayoutHtml = fs.readFileSync(`html/mainLayout.html`, "utf-8");
+  mainLayoutHtml = mainLayoutHtml.replace("{RENDER_BODY}", indexHtml);
+  mainLayoutHtml = mainLayoutHtml.replace("{PAGE_TITLE}", "Anasayfa");
+
+  var result = mainLayoutHtml
+  
+  res.send(result);
+});
+
 app.listen(port, () => {
   console.log(`Application started at port ${port}`);
 });

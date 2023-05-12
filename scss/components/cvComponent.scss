@@ -1,139 +1,101 @@
-.first-background {
-  background-color: #bab99d;
-  width: 40rem;
-  height: 100rem;
-  position: relative;
-  left: 25rem;
-  z-index: 1;
+.header-background{
+  background-color: $color-seventh;
+  height: 4.3rem;
 }
 
-.profile-picture {
-  background-color: #f3efe6;
+.aside-background{
+  background-color: $color-seventh;
+  text-align: center;
+}
+
+.aside-profile-picture{
+  background-color: $color-seventh;
   width: 30rem;
   height: 30rem;
-  position: relative;
-  left: 30rem;
-  z-index: 2;
-  top: -94rem;
   border-radius: 50%;
 }
 
-.name {
-  width: 40rem;
-  height: 40rem;
-  position: relative;
-  left: 25rem;
-  top: -92rem;
-  z-index: 2;
-  font-family: Poppins;
+.aside-main-title{
+  color: $color-primary;
   font-size: 3rem;
-  text-align: center;
-}
-
-.name-text {
-  color: #f3efe6;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.tag {
-  color: #f3efe6;
-  text-align: left;
-  margin-left: 5rem;
-  font-family: Poppins;
-  font-size: 0, 5rem;
-  font-weight: 300;
-  margin-top: -1rem;
-}
-
-.info-pharagraph {
-  color: #f3efe6;
-  text-align: justify;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  font-family: Poppins;
-  font-size: 1.7rem;
+.aside-side-title{
+  color: $color-primary;
+  font-size: 1.8rem;
   font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.aside-text{
+  color: $color-primary;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-top: 3rem;
 }
 
-.second-background {
-  background-color: white;
-  width: 62rem;
-  height: 100rem;
-  position: relative;
-  left: 65rem;
-  z-index: 1;
-  margin-top: -170rem;
+.aside-bars{
+  border-color: $color-primary;
+  border-style: solid;
+  width: 15rem;
+  height: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 14rem;
 }
 
-.second-background-left {
-  background-color: #f3efe6;
-  width: 28rem;
-  height: 60rem;
-  position: relative;
-  left: 67rem;
-  z-index: 2;
-  margin-top: -78rem;
+.aside-bars-texture1{
+  background-color: $color-primary;
+  width: 10rem;
+  height: 2.7rem;
 }
 
-.second-background-right {
-  background-color: #f3efe6;
-  width: 28rem;
-  height: 60rem;
-  position: relative;
-  left: 97rem;
-  z-index: 2;
-  margin-top: -60rem;
+.aside-bars-texture2{
+  background-color: $color-primary;
+  width: 7rem;
+  height: 2.7rem;
 }
 
-.hobbie-1 {
-  background-color: #bab99d;
+.aside-bars-texture3{
+  background-color: $color-primary;
   width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  position: relative;
-  left: 68rem;
-  z-index: 2;
+  height: 2.7rem;
+}
+
+.aside-bars-text{
+  color: $color-primary;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  margin-left: 5.4rem;
+}
+
+.section-one{
+  border-style: solid;
+  border-color: $color-seventh;
+  height: 40rem;
+  width: auto;
+  align-self: center;
   margin-top: 3rem;
+  margin: auto;
 }
 
-.hobbie-2 {
-  background-color: #bab99d;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  position: relative;
-  left: 82rem;
-  z-index: 2;
-  margin-top: -12rem;
-}
-.hobbie-3 {
-  background-color: #bab99d;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  position: relative;
-  left: 98rem;
-  z-index: 2;
-  margin-top: -12rem;
+.section-one-margin{
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
-.hobbie-4 {
-  background-color: #bab99d;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  position: relative;
-  left: 112rem;
-  z-index: 2;
-  margin-top: -12rem;
-}
-
-.container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0rem auto;
+.aside-bar-container{
+  margin: auto;
 }
