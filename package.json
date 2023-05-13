@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass --output-style compressed scss/main.scss css/style.min.css",
-    "watch:sass": "node-sass --output-style compressed scss/main.scss css/style.min.css -w",
+    "compile:sass": "npm run compile:sass:main & npm run compile:sass:pages ",
+    "compile:sass:pages": "node-sass --output-style compressed scss/pages -o css/pages",
+    "compile:sass:main": "node-sass --output-style compressed scss/main.scss css/style.min.css",
+    "watch:sass:pages": "node-sass --output-style compressed scss/pages -o css/pages -w",
+    "watch:sass:main": "node-sass --output-style compressed scss/main.scss css/style.min.css -w",
     "start": "node server/index.js",
     "watch:server": "nodemon server/index.js"
   },
@@ -24,6 +27,7 @@
     "nodemon": "^2.0.22"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.0.0",
     "bootstrap": "^5.2.3",
     "express": "^4.18.2",
     "jquery": "^3.6.4"
