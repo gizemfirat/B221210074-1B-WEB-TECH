@@ -1,9 +1,10 @@
+@import "../abstract/variables.scss";
+
+.slider-background{
+  background-color: $color-fifth;
+}
+
 .slider-location{
-  background-color: black;
-  position: relative;
-  width: 90rem;
-  height: 40rem;
-  margin-top: -5rem;
-  left: 10rem;
-  z-index: 2;
+  margin-top: 3rem;
+  padding: 5rem;
 }

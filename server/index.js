@@ -21,11 +21,11 @@ const data = {
   surname: "Fırat",
 };
 
-app.get("/", (req, res) => {
-  const indexHtml = fs.readFileSync(`${pagePath}/index.html`, "utf-8");
+//app.get("/", (req, res) => {
+//  const indexHtml = fs.readFileSync(`${pagePath}/index.html`, "utf-8");
 
-  res.send(indexHtml);
-});
+//  res.send(indexHtml);
+//});
 
 app.get("/mycv", (req, res) => {
   const myCVHtml = fs.readFileSync(`${pagePath}/myCV.html`, "utf-8");
@@ -39,12 +39,32 @@ app.get("/mycv", (req, res) => {
     .replace("{SURNAME}", data.surname));
 });
 
+app.get("/login", (req, res) => {
+  const loginHtml = fs.readFileSync(`${pagePath}/login.html`, "utf-8");
+  var layoutHtml = fs.readFileSync(`${layoutPath}/layout.html`, "utf-8");
+
+  layoutHtml = layoutHtml.replace("{RENDER_BODY}", loginHtml);
+  layoutHtml = layoutHtml.replace("{PAGE_TITLE}", "Giriş Yap");
+
+  res.send(layoutHtml);
+});
+
 app.get("/mycity", (req, res) => {
   const myCityHtml = fs.readFileSync(`${pagePath}/myCity.html`, "utf-8");
   var layoutHtml = fs.readFileSync(`${layoutPath}/layout.html`, "utf-8");
 
   layoutHtml = layoutHtml.replace("{RENDER_BODY}", myCityHtml);
   layoutHtml = layoutHtml.replace("{PAGE_TITLE}", "Şehrim");
+
+  res.send(layoutHtml);
+});
+
+app.get("/contact", (req, res) => {
+  const contactHtml = fs.readFileSync(`${pagePath}/contact.html`, "utf-8");
+  var layoutHtml = fs.readFileSync(`${layoutPath}/layout.html`, "utf-8");
+
+  layoutHtml = layoutHtml.replace("{RENDER_BODY}", contactHtml);
+  layoutHtml = layoutHtml.replace("{PAGE_TITLE}", "İletişim");
 
   res.send(layoutHtml);
 });
@@ -71,12 +91,12 @@ app.get("/ourlegacy", (req, res) => {
 
 app.get("/", (req, res) => {
   const indexHtml = fs.readFileSync(`${pagePath}/index.html`, "utf-8");
-  var mainLayoutHtml = fs.readFileSync(`${layoutPath}/mainLayout.html`, "utf-8");
+  var layoutHtml = fs.readFileSync(`${layoutPath}/layout.html`, "utf-8");
 
-  mainLayoutHtml = mainLayoutHtml.replace("{RENDER_BODY}", indexHtml);
-  mainLayoutHtml = mainLayoutHtml.replace("{PAGE_TITLE}", "Anasayfa");
+  layoutHtml = layoutHtml.replace("{RENDER_BODY}", indexHtml);
+  layoutHtml = layoutHtml.replace("{PAGE_TITLE}", "Anasayfa");
 
-  res.send(mainLayoutHtml);
+  res.send(layoutHtml);
 });
 
 app.get("/api/my-interests/music-genre", (req, res) => {
