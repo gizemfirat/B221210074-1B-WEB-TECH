@@ -1,30 +1,24 @@
-<link rel="stylesheet" href="../css/pages/login-page.css">
+<link rel="stylesheet" href="../css/pages/login-page.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
 
-<h1>Giriş Yap</h1>
-<form action="process-login.php" method="post">
-  <div>
-    <label for="eMail">E-Mail</label>
-    <input type="email" id="email" name="email" required>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div>
+      <form action="process-index.php">
+        <div class="login-component">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="password">Şifre</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div>
+          <input type="submit" class="btn btn-light" value="Giriş">
+        </div>
+      </form>
+    </div>
   </div>
-  <div>
-    <label for="password">Şifre</label>
-    <input type="password" id="password" name="password" required>
-  </div>
-  <button>Giriş Yap</button>
-</form>
-
-
-<!--<div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-    <form class="login-box login-location">
-      <label for="userName" class="login-component"> Kullanıcı Adı:</label>
-      <input type="text" id="userName" name="userName" class="login-component" /> <br />
-      <label for="password" class="login-component"> Şifre: </label>
-      <input type="password" name="password" class="login-component"/> <br />
-      <button class="login-button">Giriş Yap</button>
-    </form>    
-  </div>
-  <div class="col-md-4"></div>
-</div>-->
+  <div class="col-md-2"></div>
+</div>

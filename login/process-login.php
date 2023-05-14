@@ -1,15 +1,21 @@
 <?php
+
+$json_data = '{"email": "b", "password": "1"}';
+$data = json_decode($json_data, true);
+
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$data = array(
-  "eMail" => "aaaaaa@hh.com",
-  "password" => "346365"
+$form_data = array(
+  "email" => $email,
+  "password" => $password
 );
 
-if ($email == $data['eMail'] && $password == $data['password']) {
-  echo "Giriş başarılı!";
+$json_form_data = json_encode($form_data);
+if ($json_data === $json_form_data) {
+  echo "Giriş Başarılı!";
 } else {
-  echo "Giriş başarısız!";
+  echo "Giriş Başarısız!"; //XAMPP KUR!
 }
+
 ?>
