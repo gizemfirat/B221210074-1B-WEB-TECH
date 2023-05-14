@@ -1,5 +1,5 @@
 const data = {
-  eMail: "b221210074@sakarya.edu.tr",
+  eMail: "baa@hh.com",
   password: "b221210074",
 };
 
