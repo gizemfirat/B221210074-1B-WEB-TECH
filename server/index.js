@@ -19,13 +19,14 @@ app.use(
 const data = {
   name: "Gizem",
   surname: "Fırat",
+  //eMail: "b221210074@sakarya.edu.tr",
+  //password: "b221210074",
 };
 
 //app.get("/", (req, res) => {
 //  const indexHtml = fs.readFileSync(`${pagePath}/index.html`, "utf-8");
 
-//  res.send(indexHtml);
-//});
+//  res.send(indexHtml);});
 
 app.get("/mycv", (req, res) => {
   const myCVHtml = fs.readFileSync(`${pagePath}/myCV.html`, "utf-8");
@@ -110,4 +111,3 @@ app.get("/api/my-interests/music-genre", (req, res) => {
 app.listen(port, () => {
   console.log(`Application started at port ${port}`);
 });
-
