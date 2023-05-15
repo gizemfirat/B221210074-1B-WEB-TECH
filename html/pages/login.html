@@ -1,24 +1,33 @@
 <link rel="stylesheet" href="../css/pages/login-page.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
 
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <div>
-      <form action="process-index.php">
-        <div class="login-component">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-        </div>
-        <div>
-          <label for="password">Şifre</label>
-          <input type="password" name="password" id="password" />
-        </div>
-        <div>
-          <input type="submit" class="btn btn-light" value="Giriş">
-        </div>
-      </form>
-    </div>
+  <div class="col-md-3"></div>
+  <div class="col-md-6" class="login-location">
+    <form action="login.php" method="post">
+      <div class="login-element-location">
+        E-mail
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          class="login-element"
+        />
+        <br />
+      </div>
+      <div class="login-element-location">
+        Şifre
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          class="login-element"
+        />
+        <br />
+      </div>
+      <input type="submit" class="btn btn-light" value="GÖNDER" />
+    </form>
   </div>
-  <div class="col-md-2"></div>
+  <div class="col-md-3"></div>
 </div>

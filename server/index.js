@@ -100,6 +100,11 @@ app.get("/", (req, res) => {
   res.send(layoutHtml);
 });
 
+app.get("/", (req, res) => {
+const loginPHP = fs.readFileSync(`login/process-login.php`, "utf-8");
+
+res.send(loginPHP);});
+
 app.get("/api/my-interests/music-genre", (req, res) => {
   var data = [];
   for(var i = 0; i< 3; i++){

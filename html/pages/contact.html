@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    
+  </script>
+  
+  <title>Contact</title>
+</head>
+<body>
+  <h6>ANKET</h6>
+  <div>
+<form id="my-form" action="">
+  İsminiz<input type="text" name="name" id="name">
+  Soyisminiz <input type="text" name="surname" id="surname">
+  </div>
+  <div>
+      Cinsiyetiniz <br>
+      <input type="radio" id="male" name="gender" value="Erkek"> Erkek <br>
+      <input type="radio" id="female" name="gender" value="Kadın"> Kadın
+  </div>
+  <div>
+      Aldığınız Dersler <br>
+      <input type="checkbox" name="class1"id="class1"
+      value="WebTech"> Web Teknolojileri <br>
+      <input type="checkbox" name="class2" id="class2"
+      value="OOP"> Nesneye Dayalı Programlama <br>
+      <input type="checkbox" name="class3" id="class3"
+      value="Math"> Matematik <br>
+      <input type="checkbox" name="class4" id="class4"
+      value="Physics"> Fizik <br>
+  </div>
+  <div>
+    Web Teknolojileri Grubunuz(Dersi Alıyorsanız Eğer) ve Dersi Veren Öğretmen <br>
+    <input type="text" list="teacher-name">
+    <datalist id="teacher-name">
+      <option value="can-y">Can Yüzkollar - A Grubu</option>
+      <option value="hüs-e">Hüseyin Eski - B Grubu</option>
+    </datalist> 
+  </div>
+  <div>
+      İletişim Bilgileri <br>
+      E-mailiniz <input type="email" name="email" id="email">
+  </div>
+  <div>
+    <select name="music-genre" id="music-genre">
+      <option value="pop">Pop Müzik</option>
+      <option value="rock">Rock Müzik</option>
+      <option value="rap">Rap Müzik</option>
+      <option value="classical">Klasik Müzik</option>
+    </select>
+  </div>
+  <div>
+    Mesajınız <br>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+  </div>
+  <div>
+    <button onclick="submitForm()"> Gönder </button>
+  </div>
+  <div>
+    <input type="reset" value="FORMU TEMİZLE">
+  </div>
+</form>
+
+
+</body>
+</html>
