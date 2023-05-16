@@ -19,9 +19,26 @@
   color: $color-primary;
 }
 
+.left-title{
+  color: $color-fifth;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 6rem;
+}
+
 .right-paragraph{
   padding: 2rem;
   margin-top: 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: $color-fifth;
+}
+
+.right-bottom-paragraph{
+  padding: 1rem;
+  margin-top: 2rem;
   font-size: 1.6rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;

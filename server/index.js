@@ -1,7 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const { faker } = require('@faker-js/faker');
+const { faker } = require("@faker-js/faker");
 
 const app = express();
 const port = 3000;
@@ -28,6 +28,70 @@ const data = {
 
 //  res.send(indexHtml);});
 
+app.get("/", (req, res) => {
+  const indexHtml = fs.readFileSync(`index.html`, "utf-8");
+
+  res.send(indexHtml);
+});
+
+app.get("/myCv.html", (req, res) => {
+  const myCVHtml = fs.readFileSync(`myCv.html`, "utf-8");
+
+  res.send(myCVHtml);
+});
+
+app.get("/ourLegacy.html", (req, res) => {
+  const ourLegacyHtml = fs.readFileSync(`ourLegacy.html`, "utf-8");
+
+  res.send(ourLegacyHtml);
+});
+
+app.get("/myCity.html", (req, res) => {
+  const myCityHtml = fs.readFileSync(`myCity.html`, "utf-8");
+
+  res.send(myCityHtml);
+});
+
+app.get("/zilkale.html", (req, res) => {
+  const zilkaleHtml = fs.readFileSync(`zilkale.html`, "utf-8");
+
+  res.send(zilkaleHtml);
+});
+app.get("/login.html", (req, res) => {
+  const loginHtml = fs.readFileSync(`login.html`, "utf-8");
+
+  res.send(loginHtml);
+});
+app.get("/contact.html", (req, res) => {
+  const contactHtml = fs.readFileSync(`contact.html`, "utf-8");
+
+  res.send(contactHtml);
+});
+
+app.get("/elevityaylasi.html", (req, res) => {
+  const elevityaylasiHtml = fs.readFileSync(`elevityaylasi.html`, "utf-8");
+
+  res.send(elevityaylasiHtml);
+});
+
+app.get("/agaranselalesi.html", (req, res) => {
+  const agaranselalesiHtml = fs.readFileSync(`agaranselalesi.html`, "utf-8");
+
+  res.send(agaranselalesiHtml);
+});
+
+app.get("/senyuvakoprusu.html", (req, res) => {
+  const senyuvakoprusuHtml = fs.readFileSync(`senyuvakoprusu.html`, "utf-8");
+
+  res.send(senyuvakoprusuHtml);
+});
+
+app.get("/myInterests.html", (req, res) => {
+  const myInterestsHtml = fs.readFileSync(`myInterests.html`, "utf-8");
+
+  res.send(myInterestsHtml);
+});
+
 app.get("/mycv", (req, res) => {
   const myCVHtml = fs.readFileSync(`${pagePath}/myCV.html`, "utf-8");
   var layoutHtml = fs.readFileSync(`${layoutPath}/layout.html`, "utf-8");
@@ -35,9 +99,9 @@ app.get("/mycv", (req, res) => {
   layoutHtml = layoutHtml.replace("{RENDER_BODY}", myCVHtml);
   layoutHtml = layoutHtml.replace("{PAGE_TITLE}", "Özgeçmiş");
 
-  res.send(layoutHtml
-    .replace("{NAME}", data.name)
-    .replace("{SURNAME}", data.surname));
+  res.send(
+    layoutHtml.replace("{NAME}", data.name).replace("{SURNAME}", data.surname)
+  );
 });
 
 app.get("/login", (req, res) => {
@@ -71,7 +135,10 @@ app.get("/contact", (req, res) => {
 });
 
 app.get("/myinterests", (req, res) => {
-  const myInterestsHtml = fs.readFileSync(`${pagePath}/myInterests.html`, "utf-8");
+  const myInterestsHtml = fs.readFileSync(
+    `${pagePath}/myInterests.html`,
+    "utf-8"
+  );
   var layoutHtml = fs.readFileSync(`${layoutPath}/layout.html`, "utf-8");
 
   layoutHtml = layoutHtml.replace("{RENDER_BODY}", myInterestsHtml);
@@ -101,17 +168,18 @@ app.get("/", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-const loginPHP = fs.readFileSync(`login/process-login.php`, "utf-8");
+  const loginPHP = fs.readFileSync(`login/process-login.php`, "utf-8");
 
-res.send(loginPHP);});
+  res.send(loginPHP);
+});
 
 app.get("/api/my-interests/music-genre", (req, res) => {
   var data = [];
-  for(var i = 0; i< 3; i++){
-    data.push(faker.music.genre())
+  for (var i = 0; i < 3; i++) {
+    data.push(faker.music.genre());
   }
   res.send(data);
-})
+});
 
 app.listen(port, () => {
   console.log(`Application started at port ${port}`);

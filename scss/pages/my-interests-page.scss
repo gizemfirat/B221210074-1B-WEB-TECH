@@ -1,31 +1,30 @@
 @import "../abstract/variables.scss";
 
-
-.left-side{
-  background-color: $color-secondary;
-  height: 100rem;
+.people-panel{
+  background-color: $color-eighth;
+  margin: auto;
   text-align: center;
+  margin-top: 20rem;
 }
 
-.left-side-picture{
-  height: 20rem;
-  width: 25rem;
-  background-color: $color-secondary;
-  margin: auto;
+.create-button{
+  text-align: center;
+  background-color: $color-seventh;
 }
 
-.right-side-picture{
-  height: 20rem;
-  width: 25rem;
-  background-color: $color-secondary;
-  margin: auto;
-}
-
-.right-side-text{
-  font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
-  text-align: justify;
+.interest-title{
+  font-size: 3rem;
   color: $color-fifth;
-  margin-top: 2rem;
-  padding: 3rem;
+  font-weight: 600;
+}
+
+.main-part-panel{
+  text-align: center;
+  margin: auto;
+}
+
+.interest-paragraph{
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
 }

@@ -1,10 +1,5 @@
 @import "../abstract/variables.scss";
 
-.header-background{
-  background-color: $color-seventh;
-  height: 4.3rem;
-}
-
 .aside-background{
   background-color: $color-seventh;
   text-align: center;
@@ -43,6 +38,15 @@
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 3rem;
+}
+
+.aside-bottom-text{
+  color: $color-primary;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .aside-bars{
@@ -96,6 +100,20 @@
   margin-top: 4rem;
   margin-left: 4rem;
   margin-right: 4rem;
+}
+
+.section-text{
+  text-align: center;
+  color: $color-fifth;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.section-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight:600;
+  padding: 1rem;
 }
 
 .aside-bar-container{

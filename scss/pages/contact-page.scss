@@ -1,0 +1,14 @@
+@import "../abstract/variables.scss";
+
+.contact-title{
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color-fifth;
+  text-align: center;
+}
+
+.contact-background{
+  background-color: $color-eighth;
+  margin: auto;
+  text-align: center;
+}
