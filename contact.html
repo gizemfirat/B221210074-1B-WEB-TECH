@@ -19,9 +19,7 @@
       style="position: flex"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"
-          >Gizem Fırat</a
-        >
+        <a class="navbar-brand" href="/">Gizem Fırat</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -77,115 +75,131 @@
         </div>
       </div>
     </nav>
-    <br>
-    <br>
-    <h6 class="contact-title">ANKET</h6>
-    <div class="contact-background">
-      <div>
-        <form id="my-form" action="php/show-contact.php" onsubmit="return validateForm()" method="post">
-          İsminiz<input type="text" name="name" id="name"> <br>
-          Soyisminiz <input type="text" name="surname" id="surname">
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 contact-background">
+        <h6 class="contact-title">ANKET</h6>
+        <form
+          id="my-form"
+          action="php/show-contact.php"
+          onsubmit="return validateForm()"
+          method="post"
+        >
+          İsminiz <input type="text" name="name" id="name" />
+          <br />
+          Soyisminiz <input type="text" name="surname" id="surname" />
+          <br />
+          Cinsiyetiniz <br />
+          <input type="radio" id="male" name="gender" value="Erkek" /> Erkek
+          <br />
+          <input type="radio" id="female" name="gender" value="Kadın" /> Kadın
+          <br />
+          Aldığınız Dersler
+          <br />
+          <input
+            type="checkbox"
+            name="class[1]"
+            id="class"
+            value="Web Teknolojileri"
+          />
+          Web Teknolojileri <br />
+          <input
+            type="checkbox"
+            name="class[2]"
+            id="class"
+            value="Nesneye Dayalı Programlama"
+          />
+          Nesneye Dayalı Programlama <br />
+          <input type="checkbox" name="class[3]" id="class" value="Matematik" />
+          Matematik <br />
+          <input type="checkbox" name="class[4]" id="class" value="Fizik" />
+          Fizik
+          <br />
+          Web Teknolojileri Grubunuz(Dersi Alıyorsanız Eğer) ve Dersi Veren
+          Öğretmen
+          <br />
+          <input type="text" list="teacher-name" name="teacher-name" />
+          <datalist id="teacher-name">
+            <option value="Can Yüzkollar">Can Yüzkollar - A Grubu</option>
+            <option value="Hüseyin Eski">Hüseyin Eski - B Grubu</option>
+          </datalist>
+          <br />
+          İletişim Bilgileri <br />
+          E-mailiniz <input type="text" name="email" id="email" />
+          <br />
+          Favori Müzik Türünüz
+          <select name="music-genre" id="music-genre">
+            <option value="Pop Müzik">Pop Müzik</option>
+            <option value="Rock Müzik">Rock Müzik</option>
+            <option value="Rap Müzik">Rap Müzik</option>
+            <option value="Klasik Müzik">Klasik Müzik</option>
+          </select>
+          <br />
+          Mesajınız <br />
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br />
+          <div>
+            <input type="submit" value="GÖNDER" />
           </div>
           <div>
-              Cinsiyetiniz <br>
-              <input type="radio" id="male" name="gender" value="Erkek"> Erkek <br>
-              <input type="radio" id="female" name="gender" value="Kadın"> Kadın
-          </div>
-          <div>
-              Aldığınız Dersler <br>
-              <input type="checkbox" name="class[1]"id="class"
-              value="Web Teknolojileri"> Web Teknolojileri <br>
-              <input type="checkbox" name="class[2]" id="class"
-              value="Nesneye Dayalı Programlama"> Nesneye Dayalı Programlama <br>
-              <input type="checkbox" name="class[3]" id="class"
-              value="Matematik"> Matematik <br>
-              <input type="checkbox" name="class[4]" id="class"
-              value="Fizik"> Fizik <br>
-          </div>
-          <div>
-            Web Teknolojileri Grubunuz(Dersi Alıyorsanız Eğer) ve Dersi Veren Öğretmen <br>
-            <input type="text" list="teacher-name" name="teacher-name">
-            <datalist id="teacher-name">
-              <option value="Can Yüzkollar">Can Yüzkollar - A Grubu</option>
-              <option value="Hüseyin Eski">Hüseyin Eski - B Grubu</option>
-            </datalist> 
-          </div>
-          <div>
-              İletişim Bilgileri <br>
-              E-mailiniz <input type="text" name="email" id="email">
-          </div>
-          <div>
-            Favori Müzik Türünüz
-            <select name="music-genre" id="music-genre">
-              <option value="Pop Müzik">Pop Müzik</option>
-              <option value="Rock Müzik">Rock Müzik</option>
-              <option value="Rap Müzik">Rap Müzik</option>
-              <option value="Klasik Müzik">Klasik Müzik</option>
-            </select>
-          </div>
-          <div>
-            Mesajınız <br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          </div>
-          <div>
-            <input type="submit" value="GÖNDER">
-          </div>
-          <div>
-            <input type="reset" value="FORMU TEMİZLE">
+            <input type="reset" value="FORMU TEMİZLE" />
           </div>
         </form>
+      </div>
+      <div class="col-md-2"></div>
     </div>
-  
-  <script>
-  
-    function validateForm() {
-      var submitName = document.forms["my-form"]["name"].value;
-      if(submitName == "") {
-        alert("Lütfen isim alanını doldurun!");
-        return false;
-      }
-  
-      var submitSurname = document.forms["my-form"]["surname"].value;
-      if(submitSurname == "") {
-        alert("Lütfen soyisim alanını doldurun!");
-        return false;
-      }
-  
-      var getSelectedValue = document.querySelector('input[name="gender"]:checked');
-      if(getSelectedValue == null)
-      {
-        alert("Lütfen cinsiyet alanını doldurun!");
-        return false;
-      }
-  
-      var datalistValue = document.forms["my-form"]["teacher-name"].value;
-      if(datalistValue == "")
-      {
-        alert("Lütfen bir öğretmen seçiniz!");
-        return false;
-      }
-  
-      var checkbox = document.querySelector('input[id="class"]:checked');
-      if(checkbox == null)
-      {
-        alert("Lütfen en az bir ders seçiniz!");
-        return false;
-      }
-   
-      var submitemail = document.forms["my-form"]["email"].value;
-      var atpos = submitemail.indexOf("@");
-      var dotpos = submitemail.indexOf(".");
-      if(submitemail == "")
-      {
-        alert("Lütfen email adres alanını doldurun!");
-        return false;
-      }
-      else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
-        {
+
+    <script>
+      function validateForm() {
+        var submitName = document.forms["my-form"]["name"].value;
+        if (submitName == "") {
+          alert("Lütfen isim alanını doldurun!");
+          return false;
+        }
+
+        var submitSurname = document.forms["my-form"]["surname"].value;
+        if (submitSurname == "") {
+          alert("Lütfen soyisim alanını doldurun!");
+          return false;
+        }
+
+        var getSelectedValue = document.querySelector(
+          'input[name="gender"]:checked'
+        );
+        if (getSelectedValue == null) {
+          alert("Lütfen cinsiyet alanını doldurun!");
+          return false;
+        }
+
+        var checkbox = document.querySelector('input[id="class"]:checked');
+        if (checkbox == null) {
+          alert("Lütfen en az bir ders seçiniz!");
+          return false;
+        }
+
+        var datalistValue = document.forms["my-form"]["teacher-name"].value;
+        if (datalistValue == "") {
+          alert("Lütfen bir öğretmen seçiniz!");
+          return false;
+        }
+
+        var submitemail = document.forms["my-form"]["email"].value;
+        var atpos = submitemail.indexOf("@");
+        var dotpos = submitemail.indexOf(".");
+        if (submitemail == "") {
+          alert("Lütfen email adres alanını doldurun!");
+          return false;
+        } else if (
+          atpos < 1 ||
+          dotpos < atpos + 2 ||
+          dotpos + 2 >= email.length
+        ) {
           alert("Lütfen geçerli bir email adresi girin!");
           return false;
         }
-    }
-  </script>
+      }
+    </script>
   </body>
 </html>
