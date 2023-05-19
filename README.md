@@ -8,7 +8,7 @@
 
 
    Projenin host edildiği siteye ulaşmak isterseniz:
-    https://gizemfratwebtech.000webhostapp.com/
+   http://gizemfratwebtech.rf.gd/
 
     
-   NOT: Projemi hazırlarken çeşitli node modulleri kullandığım için projenin içinde ekstra olarak server ve node_modules adında iki dosya bulunmakta. Bu dosyalardan node_modules'ün içinde bulunan bootstrap dosyası, projemde kullandığım bootstrap yapısının referans aldığı yerdir. Bu yüzden projeyi indirirken bu dosyaları da indirdiğinizden emin olun. 
+   NOT: Projemi hazırlarken çeşitli node modulleri kullandığım için projenin içinde ekstra olarak server ve node_modules adında iki dosya bulunmakta. Bu dosyalardan node_modules'ün içinde bulunan bootstrap dosyası, projemde kullandığım bootstrap yapısının referans aldığı yerdir.
